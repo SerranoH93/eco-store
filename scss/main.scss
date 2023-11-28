@@ -2,8 +2,9 @@ $primary-color: #FFEFE7;
 $secundary-color: #FFDAC6;
 $tertiary-color: #BABD8D;
 $primary-text-color: #7C6A0A;
+$quaternion-color: #FA9500;
 $font-stack: 'IBM Plex Sans', sans-serif;
-
+$paragraph-size: 1.5em;
 
 body{
     margin: 0px;
@@ -18,9 +19,11 @@ nav {
     justify-content: space-between;
     color: $primary-text-color;
     padding: 15px;
+
     p {
-        font-size: 1.5em;
+        font-size: $paragraph-size;
         padding-left: 30px;
+        cursor: pointer;
     }
 
     .icons {
@@ -31,6 +34,51 @@ nav {
             border-style: none;
             cursor: pointer;            
         }
+    }
+}
+
+article {
+    display: flex;
+    width: auto;
+    color: $primary-text-color;
+    padding-left: 45px;
+    padding-right: 45px;
+    justify-content: space-between;    
+
+    .impact-section{
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        gap: 25px;
+        
+    }
+
+    h1{
+        font-size: 3em;
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    p{
+        font-size: $paragraph-size;
+    }
+
+    button{
+        width: 12vw;
+        padding: 20px;
+        background-color: $quaternion-color;
+        border-radius: 35px;
+        border-style: none;
+        color: #FFFFFF;
+        font-size: 1.2em;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    img {
+        width: 25vw;
+        border-radius: 19px;
     }
 }
 
