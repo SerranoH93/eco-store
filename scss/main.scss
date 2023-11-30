@@ -79,7 +79,11 @@ article {
         border-radius: 35px;        
         color: #FFFFFF;
         font-size: 1.2em;
-        font-weight: bold;       
+        font-weight: bold;
+
+        &:hover {
+            transform: scale(1.1);
+        }       
     }
 
     img {
@@ -203,6 +207,29 @@ section {
         @extend .earth;
     }
 }
+
+.gallery {    
+    h2 {
+        font-weight: bold;
+        padding-bottom: 60px;
+    }
+    
+    .gallery-images {
+        @include flexCenter(row, space-between, center);
+        img {
+            width: 30vw;
+            height: 40vh;
+            object-fit: cover;
+            object-position: 5px 35%;
+            border-radius: 16px;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+}
+
 footer {
     $background: #FA9500;
     background-color: $background;
